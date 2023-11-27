@@ -1,0 +1,103 @@
+.banner{
+               
+               background-image: url('../../../assets/img/pizzaria.jpg');        
+                  height: 800px;
+                  background-position: center top;
+                  background-size: cover;
+
+}
+
+
+.content{
+    top: 15%;
+    left: 20%;
+    position: absolute;
+}
+
+.content h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+
+.content a {
+    text-decoration: none;
+    background-color: white;
+    color: blueviolet;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.content a:hover {
+
+    background-color: blueviolet;
+    color: white;
+}
+
+.Box{
+    background-color: rgb(60, 60, 60);
+    padding: 20px 20px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+.Box h1{
+    color: yellow;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.Box p {
+ color: white;
+ font-size: 20px;
+ font-weight: bold;
+ font-style: italic;
+}
+
+.box{
+
+        padding: 10px 5px;
+     
+}
+
+
+.box img{
+
+   width: 100%;
+   height: 250px;
+   object-fit: cover;
+   border-radius: 5px;
+ 
+}
+
+.box h1{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.maisop{
+    text-decoration: none;
+    background-color: green;
+color: white;
+
+    padding: 16px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+@media screen and   (max-width: 600px){
+
+    .banner{
+               
+       
+           height: 700px;
+           
+
+}
+
+}

@@ -1,0 +1,41 @@
+<div>
+    <h1>Itens do Carrinho</h1>
+  
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Imagem</th>
+          <th>Nome</th>
+          <th>Detalhes</th>
+          <th>Preço</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+  
+      <tbody>
+        <tr *ngFor="let item of itensCarrinho; index as i">
+          <td>{{ i + 1 }}</td>
+          <td><img src="{{item.pizzaImg}}" alt="{{item.pizzaName}}" width="100"></td>
+          <td>{{ item.pizzaName }}</td>
+          <td>{{ item.pizzaDetails }}</td>
+          <td>{{ (item.pizzaPrice * 0.87)  | currency:'BRL'}}</td>
+  
+          <td>
+            <button class="btn btn-danger" (click)="removerPedido(i)">Cancelar Pedido</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <div class="text-center">
+      <button class="btn btn-success" (click)="finalizarCompra()">Finalizar Compra</button>
+      <!-- <button class="btn btn-primary" (click)="adicionarNoBanco()">Adicionar no Banco</button> -->
+    </div>
+  </div>
+
+
+    
+
+
+

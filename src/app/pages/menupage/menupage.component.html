@@ -1,0 +1,44 @@
+<div class="container mt-4 mb-5">
+
+   
+
+    <div class="row">   
+
+        <div class="col-lg-6" *ngIf=" menuData ">
+
+          <a routerLink="../../menu" class="btn btn-sm btn-warning mb-4">Voltar</a>
+                 
+            <img src="{{menuData[0].pizzaImg}}" width="100%">
+            <h1>{{menuData[0].pizzaName}}</h1>
+            <p>{{menuData[0].pizzaDetails }}</p>
+            <p>{{menuData[0].pizzaPrice | currency:'BRL'}}</p>
+            
+          </div>
+
+          <div class="col-lg-6">
+               
+            <h1 class="text-center" >Detalhes do Cliente</h1>
+             <form action="">
+
+                <input type="text" class="form-control" placeholder="Digite  Seu Nome Completo">
+                <input type="text" class="form-control" placeholder="Digite O Seu Telefone">
+                <textarea class="form-control" placeholder="Digite seu endereco ou local da entrega"> </textarea>
+                <button class="btn btn-md btn-success mt-3">Fazer Pedido</button>
+
+             </form>
+            
+               
+   
+             </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+    
+
+

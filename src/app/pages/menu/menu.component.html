@@ -1,0 +1,52 @@
+
+
+
+
+<div class="barra"> 
+
+   
+     
+  <input type="text" placeholder="Pesquisar Produto" [(ngModel)]="searchItem" >
+   <button (click)="filterItems()"  class="btn btn-primary"  type="button">
+   <i class="bi bi-search"></i> 
+  </button>
+</div>
+
+
+
+
+
+
+<div class="container mt-4 mb-5">
+
+    <h1 class="text-center"></h1>
+
+    <div class="row">   
+
+        <div class="col-lg-4 " *ngFor= " let f of pizzas  ">
+
+          <div class="box" >
+                 
+         <img src="{{f.pizzaImg}}" alt="">
+            <h1>{{f.pizzaName}}</h1>
+            <p>{{f.pizzaDetails }}</p>
+            <p>{{f.pizzaPrice | currency:'BRL'}}</p>
+            <button class="btn_pedido" (click)="adicionarAoCarrinho(f)">Adicionar Carrinho <i class="bi bi-bag-fill"></i></button>  
+
+          </div>
+
+        </div>
+    </div>
+
+
+
+    
+    <div class="car" (click)="navegarParaItensCarrinho()">
+      
+      <span>{{carrinhoService.quantidadeItens}}</span>
+      <i class="bi bi-cart-plus-fill"></i>
+
+    </div>
+
+    
+</div>
