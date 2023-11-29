@@ -1,52 +1,67 @@
 
 
+<main class="background">
 
-
-<div class="barra"> 
-
-   
-     
-  <input type="text" placeholder="Pesquisar Produto" [(ngModel)]="searchItem" >
-   <button (click)="filterItems()"  class="btn btn-primary"  type="button">
-   <i class="bi bi-search"></i> 
-  </button>
-</div>
+  <div class="barra-text-center"> 
+    <input id="barra-pesquisa" type="text" placeholder="Pesquisar Produto" [(ngModel)]="searchItem"  style="width: 50vh;" >
+    <button (click)="filterItems()"  class="btn btn-primary"  type="button">
+      <i class="bi bi-search"></i> <!-- Substitua "bi bi-search" pelo nome do ícone do Bootstrap Icons -->
+    </button>
+  </div>
 
 
 
+  <section id="menu-pizzas">
+    
+  <div class="teste">
 
+    <div class="aaa" *ngFor= " let f of pizzas  ">
+    
+      <div class="pizza-img-container">
 
-
-<div class="container mt-4 mb-5">
-
-    <h1 class="text-center"></h1>
-
-    <div class="row">   
-
-        <div class="col-lg-4 " *ngFor= " let f of pizzas  ">
-
-          <div class="box" >
-                 
-         <img src="{{f.pizzaImg}}" alt="">
-            <h1>{{f.pizzaName}}</h1>
-            <p>{{f.pizzaDetails }}</p>
-            <p>{{f.pizzaPrice | currency:'BRL'}}</p>
-            <button class="btn_pedido" (click)="adicionarAoCarrinho(f)">Adicionar Carrinho <i class="bi bi-bag-fill"></i></button>  
-
-          </div>
-
+        <div class="pizza-img">
+            <img src="{{f.pizzaImg}}" alt="">
         </div>
-    </div>
 
+        <div class="teste-insano">
+          <div class="pizza-img-text">
+              <p id="nome-pizza">{{f.pizzaName}}</p>
+              <p id="preco-pizza">{{f.pizzaPrice | currency:'BRL'}}</p> 
+          </div>
+        </div>
+          
+      </div>
 
-
-    
-    <div class="car" (click)="navegarParaItensCarrinho()">
       
-      <span>{{carrinhoService.quantidadeItens}}</span>
-      <i class="bi bi-cart-plus-fill"></i>
+      <div class="centralizar-botao">
+        <button class="btn-pedido" (click)="adicionarAoCarrinho(f)">
+        <div class="botao-menu-container">
+            <div class="botao-menu">
+              <p>+ CARRINHO</p>
+            </div>
+            <i class=""></i> 
+        </div>
+      </button> 
+    </div>
+ 
 
     </div>
+  </div>
 
-    
+</section>
+
+<div class="car" (click)="navegarParaItensCarrinho()">
+  <div class="carrinho-menu-container">
+    <div class="carrinho-menu">
+      <div class="cart-icon-container">
+        <img src="https://i.imgur.com/P7LnFmn.png" alt="">
+      </div>
+      <div class="cart-number-container">
+        <span>{{carrinhoService.quantidadeItens}}</span>
+      </div>
+    </div>
+  </div>
+  
 </div>
+
+</main>

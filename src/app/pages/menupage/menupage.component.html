@@ -4,14 +4,14 @@
 
     <div class="row">   
 
-        <div class="col-lg-6" *ngIf=" menuData ">
+        <div class="col-lg-6" *ngIf=" pizzas ">
 
           <a routerLink="../../menu" class="btn btn-sm btn-warning mb-4">Voltar</a>
                  
-            <img src="{{menuData[0].pizzaImg}}" width="100%">
-            <h1>{{menuData[0].pizzaName}}</h1>
-            <p>{{menuData[0].pizzaDetails }}</p>
-            <p>{{menuData[0].pizzaPrice | currency:'BRL'}}</p>
+            <img src="{{pizzas[0].pizzaImg}}" width="100%">
+            <h1>{{pizzas[0].pizzaName}}</h1>
+            <p>{{pizzas[0].pizzaDetails }}</p>
+            <p>{{pizzas[0].pizzaPrice | currency:'BRL'}}</p>
             
           </div>
 
@@ -40,5 +40,6 @@
 
 
     
+
 
 

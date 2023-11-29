@@ -1,6 +1,8 @@
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DetailsService } from 'src/app/services/details.service';
+import { DetalhesPizza } from '../model/DetalhesPizza';
 
 @Component({
   selector: 'app-menupage',
@@ -12,14 +14,14 @@ export class MenupageComponent  implements OnInit{
 
    constructor(private param:ActivatedRoute , private service: DetailsService){ }  
    getMenuId:any
-   menuData:any
+   pizzas: DetalhesPizza[] = [];
    
   
   ngOnInit(): void {
    this.getMenuId = this.param.snapshot.paramMap.get('id');
    if(this.getMenuId){
 
-    this.menuData = this.service.pizzaDetails.filter((value)=>{
+    this.pizzas = this.service.pizzaDetails.filter((value)=>{
        return value.id == this.getMenuId;
        
     })
@@ -29,4 +31,9 @@ export class MenupageComponent  implements OnInit{
 
   }
 
+
+
+  
 }
+
+

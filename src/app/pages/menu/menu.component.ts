@@ -56,9 +56,9 @@ getPizzaDetails():void{
 
 
 
-  adicionarAoCarrinho(item: any): void {
-    // Use o serviço CarrinhoService para adicionar o item ao carrinho
-    this.carrinhoService.adicionarItem(item);
+  adicionarAoCarrinho(detalheesPizza: DetalhesPizza): void {
+    
+    this.carrinhoService.adicionarItem(detalheesPizza);
   }
 
   public obterQuantidadeItensNoCarrinho(): number {

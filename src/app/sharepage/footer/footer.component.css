@@ -1,4 +1,4 @@
-.footer{
+/* .footer{
     overflow: hidden;
     background-color: #ffebd8 ;
     padding: 15px 10px;
@@ -41,6 +41,79 @@ i{
 p{
     color: rgb(0, 0, 0);
     font-size: 20px;    
+}
+b{
+    margin: 0;
+ padding: 0;
+ font-family: Arial, sans-serif;
+}
+
+
+.direitos{
+    background-color: #000000;
+    overflow: hidden;
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+}
+
+.direitos a{
+    float: left;
+ display: block;
+ color: #ffffff;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+.direitos a:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+} */
+
+
+.footer{
+    overflow: hidden;
+    background-color: rgb(255, 246, 204) ;
+    padding: 15px 0px;
+    position: sticky;
+    top: 100%;
+    text-align: center;
+    border-top: 2px solid #623613;
+}
+img{
+    width: 340px;
+    height: 200px ;
+    position: relative;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+}
+
+a:hover{
+    color: #623613;
+    text-decoration: underline;
+}
+
+i{
+    padding: 0px 10px;
+
+}
+
+
+p{
+    color: rgb(0, 0, 0);
+    font-size: 30px;    
 }
 b{
     margin: 0;

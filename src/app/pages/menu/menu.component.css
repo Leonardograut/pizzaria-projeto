@@ -1,69 +1,158 @@
-.Box{
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.background{
+    background: url(https://i.imgur.com/EnuLPvB.png) repeat rgb(255, 250, 230);
+    padding-top: 50px;
+    padding-bottom: 100px;
    
-    padding: 20px 20px;
-    border-radius: 5px;
-    text-align: center;
-    
-}
-
-
-
-.box{
-
-        padding: 10px 5px;
-     
-}
-
-
-.box img{
-
-   width: 100%;
-   height: 250px;
-   object-fit: cover;
-   border-radius: 5px;
  
 }
 
-.box h1{
-    font-size: 18px;
-    margin-top: 20px;
-    font-weight: bold;
+
+.barra-text-center {
+    text-align: center;
+  }
+
+
+a{
+    text-decoration: none;
 }
 
-.btn_pedido{
-    color: rgb(243, 173, 44);
-    background-color: blue;
-    padding: 10px 10px;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
+p{
+    margin: 0;
+}
+
+.pesquisa{
+    display: flex;
+    justify-content: center;
+}
+
+#menu-pizzas{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.teste{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#nome-pizza{
+    margin-right: 10px;
+}
+
+.pizza-img-container{
+    justify-content: center;
+    border: 2px solid black;
+    background-color: white;
+    width: auto;
+    margin: 20px;
+    box-shadow: 7px 7px 0px 0px #202020;
+}
+
+.pizza-img img{
+    width: 240px;
+    height: 200px;
+    margin: 5px;
+    object-fit:cover;
+    border: 2px solid black;
+}
+
+.pizza-img-text{
+    display: flex;
+    align-items: center;
+}
+
+#nome-pizza{
+    display: flex;
+    align-items: center;
+}
+
+.teste-insano{
+    display: flex;
+    justify-content: center;
+}
+
+.teste-insano p{
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.centralizar-botao{
+    display: flex;
+    justify-content: center;
+}
+
+.botao-menu-container{
+    display: flex;
+    height: 40px;
+    width: 200px;
+    background-color: rgb(255, 193, 69);
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #623613;
+    box-shadow: 3px 3px 0px 0px #000000;
+    font-weight: bold;
+    
+}
+
+.botao-menu-container:hover{
+    background-color: rgb(255, 184, 53);
+}
+
+.botao-menu{
+    display: flex;
+    color: #623613;
+}
+
+.btn-pedido{
+    border: none;
+}
+
+.aaa{
+    margin: auto;
+}
+
+.car{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1000; 
+    right: 1rem;
+}
+
+
+.carrinho-menu-container{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    background-color: rgb(255, 193, 69);
+    border: 2px solid #623613;
+    box-shadow: 3px 3px 0px 0px #000000;
+}
+
+.carrinho-menu-container:hover{
+    background-color: rgb(255, 184, 53);
     cursor: pointer;
 }
 
-.barra input {
-    font-size: 21px;
-    margin-right: 10px;
-    width: 400px;
+.cart-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.barra {
- display: flex;
- justify-content: center;
- align-items: center;
- margin-top: 15px;
+.cart-number-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 }
 
-
-
-.car {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    left: 90%;
-  }
-
-  .car i {
-    font-size: 40px; /* Tamanho do ícone */
-    color: #007bff; /* Cor do ícone */
-    cursor:  pointer;
-  }
+.carrinho-menu img{
+    height: 40px;
+}

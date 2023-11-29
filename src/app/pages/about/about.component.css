@@ -1,0 +1,64 @@
+.background{
+    background: url(https://i.imgur.com/EnuLPvB.png) repeat rgb(255, 250, 230);
+    min-height: 500px;
+}
+
+#h1-carrinho{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#h1-carrinho h1{
+    font-weight: bold;
+}
+
+#h1-carrinho span{
+    color: rgb(255, 193, 69)
+}
+
+.table{
+    width: 1050px;
+    margin: auto;
+    border: 3px solid #623613;
+    box-shadow: 3px 3px 0px 0px #000000;
+}
+
+#btn-finalizar-container{
+    margin-top: 30px;
+}
+
+#imagem-car{
+    height: 100px;
+    width: 100px;
+    object-fit:cover;
+    border: 3px solid black;
+    box-shadow: 3px 3px 0px 0px #202020;
+    padding: 4px;
+    padding-bottom: 20px;
+}
+
+.botao-menu-container{
+    display: flex;
+    height: 40px;
+    width: 200px;
+    background-color: rgb(255, 193, 69);
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #623613;
+    box-shadow: 3px 3px 0px 0px #000000;
+    font-weight: bold;
+}
+
+.botao-menu-container:hover{
+    background-color: rgb(255, 184, 53);
+}
+
+.botao-menu{
+    display: flex;
+    color: #623613;
+}
+
+.btn-finalizar, .btn-pedido{
+    border: none;
+}

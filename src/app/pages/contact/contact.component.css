@@ -1,0 +1,27 @@
+.background{
+    background: url(https://i.imgur.com/EnuLPvB.png) repeat rgb(255, 250, 230);
+    padding-bottom: 100px;
+  }
+  
+  #sobre-container{
+    padding-top: 100px;
+  }
+  
+  .sobre{
+    padding: 20px;
+    border: 3px solid #623613;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px 0px #000000;
+    background: rgb(255, 251, 224);
+  }
+  
+  h1{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-style: italic;
+      text-decoration-line: overline;
+      font-size: 50px;
+      font-weight: bold;
+  }
+  p{
+    font-size: 20px; 
+  }
